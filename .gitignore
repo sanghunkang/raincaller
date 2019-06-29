@@ -1,6 +1,12 @@
+# Caches
 **/venv
 **/.vscode
 **/__pycache__
 **/.DS_Store
+
+# Distros
+build/
+dist/
+raincaller.egg-info/
 
 test.py

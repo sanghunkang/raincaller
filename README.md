@@ -1,3 +1,3 @@
 # Raincaller
 
-A data augmentation suites for Korean language - or hopefully others as well.
+A data augmentation suites for Natural Language Processsing.
