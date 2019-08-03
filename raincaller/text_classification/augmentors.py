@@ -1,6 +1,8 @@
 from random import randint
 
 
+# Char level augmentation
+
 # DECORATOR IMPLEMENTATION
 def replace_char(sentence, distribution, ratio=0.1, safe_checker=None):
     len_sentence = len(sentence)
