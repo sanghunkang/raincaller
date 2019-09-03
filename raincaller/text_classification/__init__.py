@@ -20,11 +20,15 @@ def get_distribution(data):
     # data:         list of string
     
     distribution = {}
-    jobs = allocate_jobs(data)    
+    jobs = allocate_jobs(data)
     
-    threads = [Thread(name=f"Job{i}", target=count_string, args=(distribution, job)) for i, job in enumerate(jobs)]
+    threads = []
+    for i, job in enumerate(jobs):
+        threads.append(Thread(name=f"Job{i}", target=count_string, args=(distribution, job)))
+    
     for thread in threads:
         thread.start()
+
     for thread in threads:
         thread.join()
 
